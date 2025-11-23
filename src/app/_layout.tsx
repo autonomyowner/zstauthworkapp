@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Stack, SplashScreen } from "expo-router"
+import { Slot, SplashScreen } from "expo-router"
 import { useFonts } from "@expo-google-fonts/space-grotesk"
 import { initialWindowMetrics, SafeAreaProvider } from "react-native-safe-area-context"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
@@ -48,9 +48,7 @@ export default function Root() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider initialMetrics={initialWindowMetrics}>
         <ThemeProvider>
-          <Stack screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="(tabs)" />
-          </Stack>
+          <Slot />
         </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>

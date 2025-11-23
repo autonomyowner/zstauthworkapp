@@ -1,4 +1,6 @@
-import { View, StyleSheet, Text } from "react-native"
+import { FC } from "react"
+import { View, StyleSheet, ViewStyle, TextStyle } from "react-native"
+import { Text } from "@/components/Text"
 import { useSafeAreaInsetsStyle } from "@/utils/useSafeAreaInsetsStyle"
 
 const COLORS = {
@@ -8,7 +10,7 @@ const COLORS = {
   textSecondary: "#8A8A8A",
 }
 
-export default function ProfileTab() {
+export const ProfileScreen: FC = function ProfileScreen() {
   const $topInsets = useSafeAreaInsetsStyle(["top"])
 
   return (
@@ -26,15 +28,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingBottom: 100,
-  },
+  } as ViewStyle,
   title: {
     fontSize: 28,
     fontWeight: "800",
     color: COLORS.text,
     marginBottom: 8,
-  },
+  } as TextStyle,
   subtitle: {
     fontSize: 14,
     color: COLORS.textSecondary,
-  },
+  } as TextStyle,
 })
