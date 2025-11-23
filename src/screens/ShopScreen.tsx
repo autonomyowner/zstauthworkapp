@@ -427,7 +427,7 @@ const styles = StyleSheet.create({
   // Bottom overlay
   bottomOverlay: {
     position: "absolute",
-    bottom: 100,
+    bottom: 20,
     left: 16,
     right: 16,
   } as ViewStyle,
@@ -494,7 +494,7 @@ const styles = StyleSheet.create({
   // Progress bar
   progressContainer: {
     position: "absolute",
-    bottom: 85,
+    bottom: 5,
     left: 0,
     right: 0,
     paddingHorizontal: 2,
@@ -516,7 +516,7 @@ const styles = StyleSheet.create({
   // Swipe hint
   swipeHint: {
     position: "absolute",
-    bottom: 120,
+    bottom: 100,
     left: 0,
     right: 0,
     alignItems: "center",
